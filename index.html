@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="java.js"></script>
+
+
+    </script>
+</head>
+
+<body background="/01.jpg">
+    <header id="cabecera">
+        <div>
+            <img src="/logoweb.png" width="70">
+        </div>
+
+        <div>
+
+            <h1>SUPERMERCADO VITILEAND</h1>
+
+        </div>
+        <div>
+
+            <h2 id="sumaPrecio">0.00 €</h2>
+
+        </div>
+
+    </header>
+    <nav id="forma">
+        <form id="formul" class="producto" name="registro" onsubmit="validarFormulario(event)" >
+
+            <div>
+                <label for="nombre" class="formulario">Nombre:</label>
+                <input class="vacio" type="text" id="nombre" placeholder="Nombre del producto" required>
+                <label for="precio" class="formulario">Precio:</label>
+                <input class="vacio" type="number" step="0.01" min="0" max="999999999.999" id="precio" placeholder="0.00" required>
+
+                <label for="texto" class="formulario">Descripción:</label>
+                <textarea class="vacio" name="texto" id="texto" required></textarea>
+
+                <input type="submit" class="formulario btn" value="Añadir" >
+
+            </div>
+
+
+
+
+        </form>
+    </nav>
+
+
+
+    <div id="caja6">
+
+        
+
+        <div id="listaProductos"></div>
+
+
+    </div>
+
+
+</body>
+
+</html>
