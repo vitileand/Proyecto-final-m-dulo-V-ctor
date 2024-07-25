@@ -1,5 +1,5 @@
 
-
+// funcion que suma el precio total de los productos
 
 function sumarPrecios() {
 
@@ -12,12 +12,13 @@ function sumarPrecios() {
         suma += parseFloat(valor.textContent);
     });
 
-    document.getElementById('sumaPrecio').textContent = suma.toFixed(2) + ' €'
+    document.getElementById('sumaPrecio').textContent = 'Total   '+ suma.toFixed(2) + ' €'
 
 
 
 }
 
+// función que llama al elemento ingresado en el formulario
 
 
 function obtenerDatos() {
@@ -38,7 +39,7 @@ function obtenerDatos() {
 }
 
 
-
+// función que borra y resta el precio total
 
 function borrar(ev) {
     console.log(ev)
@@ -58,7 +59,7 @@ function borrar(ev) {
             resta += parseFloat(valor.textContent);
         });
 
-        document.getElementById('sumaPrecio').textContent = resta.toFixed(2) + ' €'
+        document.getElementById('sumaPrecio').textContent = 'Total:   '+ resta.toFixed(2) + ' €'
 
 
 
@@ -67,6 +68,7 @@ function borrar(ev) {
     restarPrecios()
 }
 
+// función que valida el formulario para su envio
 
 function validarFormulario(event) {
     event.preventDefault()
